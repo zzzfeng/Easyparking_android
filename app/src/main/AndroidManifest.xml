@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.easyparking">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.SET_DEBUG_APP" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+
+    <application
+        android:name=".utils.EasyParkingApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/appicon"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5864722ba40fa338c80006f2"></meta-data>
+
+        <!--//打包时候的Value-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="bdae2e8f7860dfe09f0048ca195ce2ce" />
+        <!---->
+        <!--//debug时候的Value-->
+        <!--<meta-data-->
+        <!--android:name="com.amap.api.v2.apikey"-->
+        <!--android:value="bdae2e8f7860dfe09f0048ca195ce2ce"-->
+        <!--/>-->
+        <activity
+            android:name=".activitys.LoginActivity"
+            android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activitys.MainActivity"
+            android:label="mainFragment" />
+        <activity
+            android:name=".activitys.RegisterActivity"
+            android:label="register" />
+        <activity
+            android:name=".activitys.orderlistActivity"
+            android:label="orderlist" />
+        <activity
+            android:name=".activitys.RecordActivity"
+            android:label="recordlist" />
+        <activity
+            android:name=".activitys.showRecordActivity"
+            android:label="showRecord"
+            android:theme="@style/translucent" />
+        <activity
+            android:name=".activitys.motifyPasswordActivity"
+            android:label="motifypassword" />
+        <activity
+            android:name=".activitys.ForgerPasswordActivity1"
+            android:label="forgerPassword1" />
+        <activity
+            android:name=".activitys.ForgerPasswordActivity2"
+            android:label="forgerPassword2" />
+        <activity
+            android:name=".activitys.safeToCheckOut"
+            android:label="checkout"
+            android:theme="@style/translucent" />
+        <activity
+            android:name=".activitys.freePlaceList"
+            android:label="freePlaceList" />
+        <activity
+            android:name=".activitys.MyInfo"
+            android:label="myinfo" />
+        <activity
+            android:name=".activitys.GoToPay"
+            android:label="pay" />
+        <activity
+            android:name=".activitys.RegisterCodeActivity"
+            android:label="register" />
+        <activity
+            android:name=".activitys.RegisterFinishedActivity"
+            android:label="register" />
+        <activity
+            android:name=".activitys.RegisterMobileActivity"
+            android:label="register" />
+        <activity
+            android:name=".activitys.RegisterPasswordActivity"
+            android:label="register" />
+        <activity
+            android:name=".activitys.ForgetPasswordActivity"
+            android:label="forgetpassword" />
+        <activity
+            android:name=".activitys.SetPasswordActivity"
+            android:label="forgetpassword" />
+        <activity
+            android:name=".activitys.PasswordFinishedActivity"
+            android:label="forgetpassword" />
+        <activity
+            android:name=".activitys.SelectTimeActivity"
+            android:label="forgetpassword" />
+        <activity
+            android:name=".activitys.AlarmActivity"
+            android:label="alaram"
+            android:theme="@style/translucent">
+
+        </activity>
+        <activity
+            android:name=".activitys.ChargePayAcitivy"
+            android:label="ChargePayAcitivy" />
+        <activity
+            android:name=".wxapi.WXEntryActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+
+        <activity
+            android:name="com.umeng.qq.tencent.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent100424468" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.umeng.qq.tencent.AssistActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+
+        <activity
+            android:name="com.umeng.socialize.editorpage.ShareActivity"
+            android:excludeFromRecents="true"
+            android:theme="@style/Theme.UMDefault" />
+
+        <receiver
+            android:name=".activitys.AlarmReceiver"
+            android:process=":remote" />
+
+
+    </application>
+
+</manifest>

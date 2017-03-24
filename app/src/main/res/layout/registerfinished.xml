@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground">
+
+    <ImageView
+        android:id="@+id/rFImgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ok" />
+
+    <TextView
+        android:id="@+id/rFTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rFImgId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="恭喜您注册成功"
+        android:textSize="30sp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:id="@+id/rFFinishButtonId"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_white"
+        android:text="@string/finishButton"
+        android:textColor="#388e8e"
+        android:textSize="20sp" />
+
+</RelativeLayout>

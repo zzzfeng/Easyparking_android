@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout style="@style/nav_header">
+
+        <ImageButton
+            android:id="@+id/btnHeaderBack"
+            style="@style/btn_header_back" />
+
+        <TextView
+            style="@style/txt_header"
+            android:text="附近停车场" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ListView
+                android:id="@+id/listView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#3e505557"
+                android:dividerHeight="1dp"></ListView>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

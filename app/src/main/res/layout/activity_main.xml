@@ -1,0 +1,96 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <FrameLayout
+        android:id="@+id/id_fragment"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#fff"/>
+
+    <LinearLayout
+
+        android:background="#ffffffff"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+
+            android:orientation="vertical">
+
+
+            <Button
+                android:paddingTop="6dp"
+                android:onClick="btnOrder"
+                android:id="@+id/item1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableTop="@mipmap/parking"
+                android:text="预定"
+                android:textSize="10sp" />
+
+            <Button
+                android:visibility="gone"
+                android:id="@+id/showinItem1"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_gravity="right"
+                android:background="#388e8e"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/item2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableTop="@mipmap/map"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Button
+                android:paddingTop="6dp"
+                android:id="@+id/item3"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:background="@null"
+                android:drawableTop="@mipmap/client"
+                android:text="我的"
+                android:textSize="10sp" />
+
+            <Button
+                android:id="@+id/showinItem3"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="#388e8e"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <LinearLayout
+        android:id="@+id/header"
+        style="@style/nav_header"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnHeaderBack"
+            style="@style/btn_header_back"
+            />
+
+        <TextView
+            style="@style/txt_header"
+            android:text="注册" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/rCUserMobileTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@id/header"
+        android:textColor="#6F7278"
+        android:textSize="18sp"
+        android:text="@string/usermobileText" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rCUserMobileTextViewId"
+        android:layout_alignBaseline="@id/rCUserMobileTextViewId"
+        android:layout_marginLeft="5dp"
+        android:textColor="#388e8e"
+        android:textSize="18sp"
+        android:text="15815882648" />
+
+    <View
+        android:id="@+id/rCSeperatorId"
+        android:layout_width="350dp"
+        android:layout_height="1dp"
+        android:layout_below="@id/rCUserMobileTextViewId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:background="?android:attr/listDivider" />
+
+    <LinearLayout
+        android:id="@+id/rCLinearLayoutId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/rCSeperatorId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp">
+
+        <EditText
+            android:id="@+id/rCCodeEditTextId"
+            android:layout_width="180dp"
+            android:layout_height="45dp"
+            android:paddingLeft="5dp"
+            android:background="@drawable/edittext_forgetpassword"
+            android:textSize="17sp"
+            android:inputType="number"
+            android:hint="输入验证码"
+            android:maxLength="6" />
+
+        <Button
+            android:id="@+id/rCGetcodeButtonId"
+            android:layout_width="0dp"
+            android:layout_height="45dp"
+            android:layout_weight="1"
+            android:layout_toRightOf="@id/rCCodeEditTextId"
+            android:layout_alignTop="@id/rCCodeEditTextId"
+            android:layout_marginLeft="10dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:background="@drawable/button_green"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:singleLine="true" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/rCNextstepButtonId"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/rCLinearLayoutId"
+        android:layout_marginTop="40dp"
+        android:layout_alignStart="@id/rCLinearLayoutId"
+        android:layout_alignEnd="@id/rCLinearLayoutId"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_green"
+        android:text="@string/nextstepButton"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

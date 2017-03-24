@@ -1,0 +1,114 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/loginbackground"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:id="@+id/lIconId"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logo" />
+
+    <RelativeLayout
+        android:id="@+id/lRelativeLayoutId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lIconId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp">
+
+        <EditText
+            android:id="@+id/lMobileEditTextId"
+            android:layout_width="300dp"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:background="@drawable/edittext_mobile"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textCursorDrawable="@null"
+            android:hint="手机号码"
+            android:maxLength="11" />
+
+        <ImageView
+            android:layout_width="295dp"
+            android:layout_height="1dp"
+            android:gravity="center"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/lMobileEditTextId"
+            android:background="#dcdcdc" />
+
+        <EditText
+            android:id="@+id/lPasswordEditTextId"
+            android:layout_width="match_parent"
+            android:layout_height="43dp"
+            android:gravity="center"
+            android:layout_below="@id/lMobileEditTextId"
+            android:layout_alignStart="@id/lMobileEditTextId"
+            android:layout_alignEnd="@id/lMobileEditTextId"
+            android:background="@drawable/edittext_password"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textCursorDrawable="@null"
+            android:hint="登录密码"
+            android:inputType="textPassword"
+            android:maxLength="16" />
+    </RelativeLayout>
+
+    <CheckBox
+        android:layout_marginLeft="-6dp"
+       android:drawableLeft="@drawable/checkbox_login"
+        android:id="@+id/lCheckBoxId"
+        android:layout_width="wrap_content"
+        android:textSize="16sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lRelativeLayoutId"
+        android:layout_alignStart="@id/lRelativeLayoutId"
+        android:layout_marginTop="5dp"
+        android:button="@null"
+        android:paddingLeft="5dp"
+        android:text="记住密码"
+        android:textColor="#ffffff"
+         />
+
+    <Button
+        android:id="@+id/lButtonId"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:textSize="18sp"
+        android:layout_below="@id/lRelativeLayoutId"
+        android:layout_alignStart="@id/lRelativeLayoutId"
+        android:layout_alignEnd="@id/lRelativeLayoutId"
+        android:layout_marginTop="40dp"
+        android:background="#ffffff"
+        android:textColor="#388e8e"
+        android:text="登陆" />
+
+    <TextView
+        android:text="忘记密码"
+        android:id="@+id/lForgetTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+    <TextView
+        android:text="注册"
+        android:id="@+id/lSignUpTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="5dp"
+        android:textColor="#ffffff"
+        android:textSize="15sp" />
+
+</RelativeLayout>
+

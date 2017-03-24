@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginbackground">
+
+    <ImageView
+        android:id="@+id/rFImgId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@mipmap/ok" />
+
+    <TextView
+        android:id="@+id/rFTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rFImgId"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="恭喜您预定成功"
+        android:textSize="30sp"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_marginTop="60dp"
+        android:layout_below="@id/rFTextViewId"
+        android:id="@+id/btn_finishorder"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_text_to_select"
+        android:text="查看订单详情"
+        android:textColor="#ff0070bb"
+        android:textSize="14sp" />
+    <Button
+        android:layout_below="@id/btn_finishorder"
+        android:id="@+id/btn_back"
+        android:layout_width="300dp"
+        android:layout_height="43dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/button_text_to_select"
+        android:text="返回主界面"
+        android:textColor="#ff0070bb"
+        android:textSize="14sp" />
+</RelativeLayout>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1">
+
+    <LinearLayout
+        android:id="@+id/header"
+        style="@style/nav_header"
+        android:layout_marginBottom="50dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btnHeaderBack"
+            style="@style/btn_header_back"
+             />
+
+        <TextView
+            style="@style/txt_header"
+            android:text="注册" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/rMMobileEditTextId"
+        android:layout_width="320dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/header"
+        android:paddingLeft="5dp"
+        android:background="@drawable/edittext_forgetpassword"
+        android:hint="填写手机号码"
+        android:maxLength="11"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/rMGetcodeButtonId"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_below="@id/rMMobileEditTextId"
+        android:layout_alignLeft="@+id/rMMobileEditTextId"
+        android:layout_alignStart="@id/rMMobileEditTextId"
+        android:layout_alignRight="@id/rMMobileEditTextId"
+        android:layout_alignEnd="@id/rMMobileEditTextId"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/button_green"
+        android:text="@string/getCodeButton"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/rMProtocolCheckBoxId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rMGetcodeButtonId"
+        android:layout_alignLeft="@id/rMGetcodeButtonId"
+        android:layout_alignStart="@id/rMGetcodeButtonId"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="5dp"
+        android:button="@drawable/checkbox_register"
+        android:text="我已阅读并同意"
+        android:textColor="#6F7278" />
+
+    <TextView
+        android:id="@+id/rMProtocolTextViewId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/rMProtocolCheckBoxId"
+        android:layout_alignBaseline="@id/rMProtocolCheckBoxId"
+        android:layout_marginLeft="5dp"
+        android:textColor="#008B8B"
+        android:textSize="17sp" />
+
+
+</RelativeLayout>
